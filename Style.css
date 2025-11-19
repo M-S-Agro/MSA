@@ -172,3 +172,7 @@ footer p {
 .footer-content .logo-line {
     margin: 4px 0; 
 }
+/* Add to Style.css for icon spacing */
+.contact-line i {
+    margin-right: 4px; /* Space between icon and link text */
+}
