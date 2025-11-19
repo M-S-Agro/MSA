@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
   <link rel="stylesheet" href="Style.css" /> 
   <title>Maa Santoshi Agro</title>
 </head>
-  
 <body>
+
+  <div id="preloader">
+      <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="loader-image">
+      <p class="loader-title">Maa Santoshi Agro <br> At : Laikera && At : Patrapali, Kuchinda</p>
+      <p class="loading-text">Loading...</p>
+  </div>
+
   <div class="background"></div>
+
   <div class="center-wrapper">
     <h1>Maa Santoshi Agro – Quick Links</h1>
+
     <div class="button-container">
     <button onclick="window.open('https://agrisnetodisha.ori.nic.in/stock/farmer/FarmerInquiry.aspx', '_blank')">Farmer Id Enquiry</button>
     <button onclick="window.open('https://krushak.odisha.gov.in/citizen-portal/login', '_blank')">Krushak Odisha</button>
@@ -28,7 +36,7 @@
   </div>
   </div>
 
- <footer>
+  <footer>
     <div class="footer-content">
       <p class="contact-line">
         <i class="fa-solid fa-phone"></i> <a href="tel:+917894675122">+91 7894675122</a> 
@@ -46,6 +54,18 @@
       <p>At: Laikera & At: Patrapali, Kuchinda</p>
     </div>
   </footer>
+
+  <script>
+    // Fades out the preloader once the entire page (including background image) is loaded
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      // Completely remove the preloader element after the fade-out transition
+      setTimeout(function(){
+        preloader.style.display = 'none';
+      }, 500); // 500ms should match the transition time in CSS
+    });
+  </script>
 
 </body>
 </html>
