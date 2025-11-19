@@ -153,6 +153,23 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* FOOTER LOGO STYLING */
+.footer-logo {
+    /* Sets height to match the text line height */
+    height: 1.2em; 
+    /* Aligns the image center to the text line */
+    vertical-align: middle; 
+    margin-right: 8px; 
+    object-fit: contain; 
+}
+
+/* Ensure paragraph margins are correct for the new structure */
 footer p {
   margin: 6px 0;
+}
+
+/* Remove margin for the logo line so it doesn't take up extra space */
+.footer-content .logo-line {
+    font-weight: 500;
+    margin: 4px 0; 
 }
