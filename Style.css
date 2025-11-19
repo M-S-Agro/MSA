@@ -23,9 +23,6 @@ body {
   width: 100%;
 }
 
-/* Rest of your CSS (background, buttons, footer, etc.) stays SAME */
-
-
 /* Moving Background */
 .background {
   position: fixed;
@@ -84,7 +81,7 @@ button {
   padding: 12px 24px;
   font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 600;
-  min-width: max-content;   /* ensures button never becomes smaller than text */
+  min-width: max-content;
   color: #fffdfc;
 
   background: rgba(138, 101, 168, 0.30);
@@ -153,26 +150,74 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* FOOTER LOGO STYLING */
-.footer-logo {
-    /* Sets height to match the text line height */
-    height: 1.2em; 
-    /* Aligns the image center to the text line */
-    vertical-align: middle; 
-    margin-right: 8px; 
-    object-fit: contain; 
-}
-
 /* Ensure paragraph margins are correct for the new structure */
 footer p {
   margin: 6px 0;
 }
 
-/* Remove margin for the logo line so it doesn't take up extra space */
-.footer-content .logo-line {
-    margin: 4px 0; 
-}
-/* Add to Style.css for icon spacing */
+/* CONTACT LINE ICONS */
 .contact-line i {
     margin-right: 4px; /* Space between icon and link text */
+}
+
+/* FOOTER LOGO STYLING */
+.footer-logo {
+    height: 1.2em; 
+    vertical-align: middle; 
+    margin-right: 8px; 
+    object-fit: contain; 
+}
+
+/* Logo line text styling */
+.footer-content .logo-line {
+    font-weight: 500;
+    margin: 4px 0; 
+}
+
+
+/* PRELOADER STYLES */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000; /* Solid Black background */
+    z-index: 9999; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    color: #ffd700; /* Golden text color */
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.loader-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 5px; /* Adjust spacing below logo */
+    margin-bottom: 5px;
+    line-height: 1.4; /* Improve line spacing for the address */
+}
+
+.loading-text {
+    font-size: 1.1rem;
+    margin-top: 0;
+    color: #e6e6e6; /* Lighter text for "Loading..." */
+}
+
+/* Logo image for preloader */
+.loader-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    /* Spinning animation for the logo */
+    animation: pulse 2s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); } /* Gentle pulsing effect */
 }
