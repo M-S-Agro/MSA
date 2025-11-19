@@ -1,24 +1,37 @@
-/* --- GLOBAL STYLE --- */
+/* GLOBAL */
 body {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
-  color: #f7f1fa; /* lavender text */
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #f7f1fa;
   text-align: center;
   position: relative;
 }
 
-/* Farmland background (natural colors) */
+/* Wrapper that keeps everything perfectly centered */
+.center-wrapper {
+  flex: 1; /* fills available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Rest of your CSS (background, buttons, footer, etc.) stays SAME */
+
+
+/* Moving Background */
 .background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 220%;
+  width: 200%;
   height: 100%;
   background: url('farm1.jpg') repeat-x center center;
   background-size: cover;
@@ -32,67 +45,67 @@ body {
   to { transform: translateX(-50%); }
 }
 
-/* GOLDEN SUNLIGHT OVERLAY */
+/* Golden Gradient Overlay */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(255, 223, 128, 0.15) 0%,
-    rgba(255, 183, 77, 0.15) 50%,
-    rgba(255, 223, 128, 0.15) 100%
+    rgba(255, 223, 128, 0.15),
+    rgba(255, 183, 77, 0.15),
+    rgba(255, 223, 128, 0.15)
   );
-  pointer-events: none;
-  z-index: -2;
   mix-blend-mode: soft-light;
+  z-index: -2;
 }
 
-/* --- TITLE --- */
+/* TITLE (RESPONSIVE) */
 h1 {
-  font-size: 3em;
-  margin-bottom: 35px;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-top: 40px;
+  margin-bottom: 30px;
   text-shadow: 0 5px 20px rgba(99, 61, 134, 0.75);
   font-weight: 700;
   letter-spacing: 1px;
-  color: #f3e8f9;
 }
 
-/* BUTTON CONTAINER */
+/* BUTTONS */
 .button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 18px;
   max-width: 850px;
+  width: 100%;
 }
 
-/* LAVENDER PREMIUM BUTTONS */
 button {
-  padding: 15px 30px;
-  font-size: 16px;
+  padding: 12px 24px;
+  font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 600;
+  min-width: max-content;   /* ensures button never becomes smaller than text */
   color: #fffdfc;
+
   background: rgba(138, 101, 168, 0.30);
   border: 1px solid rgba(189, 144, 210, 0.50);
   border-radius: 12px;
+
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: .25s ease;
   backdrop-filter: blur(6px);
+
   box-shadow: 
-    0 6px 18px rgba(0, 0, 0, 0.25),
+    0 6px 18px rgba(0,0,0,0.25),
     0 0 10px rgba(180, 132, 212, 0.4);
 }
 
 button:hover {
   transform: translateY(-3px) scale(1.05);
   background: rgba(160, 118, 192, 0.40);
-  box-shadow: 
-    0 10px 25px rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(255, 223, 128, 0.5); /* golden glow on hover */
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.35),
+    0 0 14px rgba(255, 223, 128, 0.5);
 }
 
 button:active {
@@ -100,13 +113,13 @@ button:active {
   background: rgba(145, 98, 178, 0.45);
 }
 
-/* --- FOOTER (LAVENDER GLASS PANEL) --- */
+/* FOOTER */
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
 }
 
 .footer-content {
@@ -115,21 +128,21 @@ footer {
   border-radius: 14px;
   text-align: center;
   color: #f7edf9;
-  font-size: 15px;
   width: 90%;
   max-width: 850px;
+
   backdrop-filter: blur(10px);
   border: 1px solid rgba(189, 144, 210, 0.40);
-  box-shadow: 
-    0 8px 22px rgba(0, 0, 0, 0.3),
-    0 0 16px rgba(255, 223, 128, 0.35); /* subtle golden glow */
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.3),
+    0 0 16px rgba(255,223,128,0.35);
 }
 
 footer a {
   color: #d9b3f3;
   text-decoration: none;
   font-weight: 500;
-  transition: 0.25s ease;
 }
 
 footer a:hover {
@@ -139,15 +152,4 @@ footer a:hover {
 
 footer p {
   margin: 6px 0;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  button {
-    width: 90%;
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 1.8em;
-  }
 }
