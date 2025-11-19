@@ -170,6 +170,5 @@ footer p {
 
 /* Remove margin for the logo line so it doesn't take up extra space */
 .footer-content .logo-line {
-    font-weight: 500;
     margin: 4px 0; 
 }
