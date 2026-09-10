@@ -1,72 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="MSA_Favicon.jpg">
-  <link rel="stylesheet" href="Style.css" /> 
-  <title>Maa Santoshi Agro</title>
-</head>
-<body>
-
-  <div id="preloader">
-      <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="loader-image">
-      <p class="loader-title">Maa Santoshi Agro <br> At : Laikera && At : Patrapali, Kuchinda</p>
-      <p class="loading-text">Loading...</p>
-  </div>
-
-  <div class="background"></div>
-
-  <div class="center-wrapper">
-    <h1>Maa Santoshi Agro – Quick Links</h1>
-
-    <div class="button-container">
-    <button onclick="window.open('https://agrisnetodisha.ori.nic.in/stock/farmer/FarmerInquiry.aspx', '_blank')">Farmer Id Enquiry</button>
-    <button onclick="window.open('https://krushak.odisha.gov.in/citizen-portal/login', '_blank')">Krushak Odisha</button>
-    <button onclick="window.open('https://fmdbt.agriodisha.nic.in/public/chktarget', '_blank')">Target Check</button>
-    <button onclick="window.open('https://sugam.odisha.gov.in/website/citizen-portal/login', '_blank')">Sugam Odisha</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Pump_APPFORM_NEW.aspx', '_blank')">Permit Generation</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Permit_Reprint.aspx', '_blank')">Permit Reprint</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/FMNDBT_PayFullCost.aspx', '_blank')">Full Cost Payment</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/FMNDBT_CHKPMNTSTATUS.aspx', '_blank')">Track Payment Status</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/ChkStatus.aspx', '_blank')">Permit Status</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Login.aspx', '_blank')">Dealer Login</button>
-    <button onclick="window.open('https://agrisnetodisha.ori.nic.in', '_blank')">Agrisnet</button>
-    <button onclick="window.open('https://fmdbt.agriodisha.nic.in', '_blank')">Farm Machinary</button>
-  </div>
-  </div>
-
   <footer>
     <div class="footer-content">
-      <p class="contact-line">
-        <i class="fa-solid fa-phone"></i> <a href="tel:+917894675122">+91 7894675122</a> 
-        |
-        <i class="fa-solid fa-envelope"></i> <a href="mailto:maasantoshiagro@gmail.com">maasantoshiagro@gmail.com</a> 
-        |
-        <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/917894675122" target="_blank">Chat on WhatsApp</a>
-      </p>
-      
-      <p class="logo-line"> 
-          <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="footer-logo"> 
-          Maa Santoshi Agro.
-      </p>
-      
-      <p>At: Laikera & At: Patrapali, Kuchinda</p>
+      <!-- Left Column: Business Details -->
+      <div class="footer-details">
+        <p class="logo-line"> 
+            <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="footer-logo"> 
+            Maa Santoshi Agro
+        </p>
+        <p class="contact-line">
+          <i class="fa-solid fa-phone"></i> <a href="tel:+917894675122">+91 7894675122</a>
+        </p>
+        <p class="contact-line">
+          <i class="fa-solid fa-envelope"></i> <a href="mailto:maasantoshiagro@gmail.com">maasantoshiagro@gmail.com</a>
+        </p>
+        <p class="contact-line">
+          <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me" target="_blank">Chat on WhatsApp</a>
+        </p>
+        <p class="address-line">
+          <i class="fa-solid fa-location-dot"></i> At: Laikera & At: Patrapali, Kuchinda, Odisha
+        </p>
+      </div>
+
+      <!-- Right Column: Dual Branch Maps Grid -->
+      <div class="footer-maps-grid">
+        <!-- Map 1: Laikera Branch -->
+        <div class="map-box">
+          <span class="map-label"><i class="fa-solid fa-store"></i> Laikera Branch</span>
+          <iframe 
+            src="https://maps.app.goo.gl/GTasz2m9Wzt6doSa6?g_st=aw" 
+            width="100%" 
+            height="120" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Map 2: Patrapali Branch -->
+        <div class="map-box">
+          <span class="map-label"><i class="fa-solid fa-warehouse"></i> Patrapali Branch</span>
+          <iframe 
+            src="https://maps.app.goo.gl/VtyzTugTwaYe8KKA9?g_st=aw" 
+            width="100%" 
+            height="120" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
     </div>
   </footer>
-
-  <script>
-    // Fades out the preloader once the entire page (including background image) is loaded
-    window.addEventListener('load', function() {
-      const preloader = document.getElementById('preloader');
-      preloader.style.opacity = '0';
-      // Completely remove the preloader element after the fade-out transition
-      setTimeout(function(){
-        preloader.style.display = 'none';
-      }, 500); // 500ms should match the transition time in CSS
-    });
-  </script>
-
-</body>
-</html>
