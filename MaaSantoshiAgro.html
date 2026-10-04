@@ -1,115 +1,717 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="MSA_Favicon.jpg">
-  <link rel="stylesheet" href="Style.css" /> 
-  <title>Maa Santoshi Agro</title>
-</head>
-<body>
-
-  <!-- Preloader Screen -->
-  <div id="preloader">
-      <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="loader-image">
-      <p class="loader-title">Maa Santoshi Agro <br> At : Laikera && At : Patrapali, Kuchinda</p>
-      <p class="loading-text">Loading...</p>
-  </div>
-
-  <!-- Animated Moving Background -->
-  <div class="background"></div>
-
-  <!-- Central Links Container Area -->
-  <div class="center-wrapper">
-    <h1>Maa Santoshi Agro – Quick Links</h1>
-
-    <div class="button-container">
-    <button onclick="window.open('https://agrisnetodisha.ori.nic.in/stock/farmer/FarmerInquiry.aspx', '_blank')">Farmer Id Enquiry</button>
-    <button onclick="window.open('https://krushak.odisha.gov.in/citizen-portal/login', '_blank')">Krushak Odisha</button>
-    <button onclick="window.open('https://fmdbt.agriodisha.nic.in/public/chktarget', '_blank')">Target Check</button>
-    <button onclick="window.open('https://sugam.odisha.gov.in/website/citizen-portal/login', '_blank')">Sugam Odisha</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Pump_APPFORM_NEW.aspx', '_blank')">Permit Generation</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Permit_Reprint.aspx', '_blank')">Permit Reprint</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/FMNDBT_PayFullCost.aspx', '_blank')">Full Cost Payment</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/FMNDBT_CHKPMNTSTATUS.aspx', '_blank')">Track Payment Status</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/ChkStatus.aspx', '_blank')">Permit Status</button>
-    <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Login.aspx', '_blank')">Dealer Login</button>
-    <button onclick="window.open('https://agrisnetodisha.ori.nic.in', '_blank')">Agrisnet</button>
-    <button onclick="window.open('https://fmdbt.agriodisha.nic.in', '_blank')">Farm Machinary</button>
-    <button onclick="window.open('https://myaadhaar.uidai.gov.in/', '_blank')">DBT Link Check</button>
-    </div>
-  </div>
-
-  <!-- Upgraded Dual-Map Sticky Footer Grid -->
-  <footer>
-    <div class="footer-content">
-      
-      <!-- Left Column Column Block: Contacts & Corporate Brand Info -->
-      <div class="footer-details">
-        <p class="logo-line"> 
-            <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="footer-logo"> 
-            Maa Santoshi Agro
-        </p>
-        <p class="contact-line">
-          <i class="fa-solid fa-phone"></i> <a href="tel:+917894675122">+91 7894675122</a>
-        </p>
-        <p class="contact-line">
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:maasantoshiagro@gmail.com">maasantoshiagro@gmail.com</a>
-        </p>
-        <p class="contact-line">
-          <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/917894675122"  target="_blank">Chat on WhatsApp</a>
-        </p>
-        <p class="address-line">
-          <i class="fa-solid fa-location-dot"></i> At: Laikera & At: Patrapali, Kuchinda, Odisha
-        </p>
-      </div>
-
-      <!-- Right Column Column Block: Double Embedded Map Containers -->
-      <div class="footer-maps-grid">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maa Santoshi Agro | Apple Glass Bubble Portal & Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
         
-        <!-- Map Panel 1: Laikera Branch -->
-        <div class="map-box">
-          <span class="map-label"><i class="fa-solid fa-store"></i> Laikera Branch</span>
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.124664929888!2d84.2145089!3d21.8912747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20f92f087f56ed%3A0xb14edaa688a28c79!2sMaa%20Santoshi%20Agro!5e0!3m2!1sen!2sin!4v1789062052601!5m2!1sen!2sin" 
-            width="100%" 
-            height="115" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+        /* High Contrast Theme Background Color Presets */
+        body.theme-emerald {
+            background: linear-gradient(135deg, #011c15 0%, #032d22 35%, #054f3c 70%, #064e3b 100%);
+        }
+        body.theme-lavender {
+            background: linear-gradient(135deg, #1b0938 0%, #291055 35%, #421882 70%, #311164 100%);
+        }
+        body.theme-skyblue {
+            background: linear-gradient(135deg, #042940 0%, #073b5c 35%, #09507e 70%, #064066 100%);
+        }
+        body.theme-cream {
+            background: linear-gradient(135deg, #1c1917 0%, #292524 35%, #38322e 70%, #221e1c 100%);
+        }
+        body.theme-sunset {
+            background: linear-gradient(135deg, #2b1102 0%, #4a1d04 35%, #6e2c07 70%, #471a03 100%);
+        }
+        body.theme-indigo {
+            background: linear-gradient(135deg, #0f0d2b 0%, #171345 35%, #241e6e 70%, #191452 100%);
+        }
 
-        <!-- Map Panel 2: Patrapali Branch -->
-        <div class="map-box">
-          <span class="map-label"><i class="fa-solid fa-warehouse"></i> Patrapali Branch</span>
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.0560224015157!2d84.3539303!3d21.7780927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2055007ace7c27%3A0xdd52542e913aeec5!2sMaa%20Santoshi%20Agro!5e0!3m2!1sen!2sin!4v1789062146934!5m2!1sen!2sin" 
-            width="100%" 
-            height="115" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+        .animated-bg {
+            background-size: 400% 400%;
+            animation: gradientShift 18s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-      </div>
+        /* Floating particles effect */
+        .particle {
+            position: absolute;
+            background: rgba(251, 191, 36, 0.35);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: floatUp 12s linear infinite;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(105vh) scale(0.5); opacity: 0; }
+            20% { opacity: 0.9; }
+            80% { opacity: 0.9; }
+            100% { transform: translateY(-10vh) scale(1.4); opacity: 0; }
+        }
+
+        /* Apple Glass Bubble UI Styles */
+        .apple-bubble {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 100%);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border-radius: 28px;
+            border: 1.5px solid rgba(255, 255, 255, 0.38);
+            box-shadow: 
+                0 10px 30px 0 rgba(0, 0, 0, 0.35),
+                inset 0 1px 2px 0 rgba(255, 255, 255, 0.6),
+                inset 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .apple-bubble:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.15) 100%);
+            border-color: rgba(251, 191, 36, 0.85);
+            box-shadow: 
+                0 18px 45px -5px rgba(251, 191, 36, 0.35),
+                inset 0 2px 4px 0 rgba(255, 255, 255, 0.8),
+                inset 0 -3px 6px 0 rgba(0, 0, 0, 0.4);
+            transform: translateY(-4px) scale(1.01);
+        }
+
+        .apple-bubble-sm {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 
+                0 8px 25px 0 rgba(0, 0, 0, 0.3),
+                inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .apple-bubble-sm:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.12) 100%);
+            border-color: rgba(251, 191, 36, 0.8);
+            box-shadow: 
+                0 12px 35px -5px rgba(251, 191, 36, 0.3),
+                inset 0 1px 3px 0 rgba(255, 255, 255, 0.7);
+            transform: translateY(-2px);
+        }
+
+        /* Preloader styling */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: #011c15;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .loader-pulse {
+            animation: pulseLogo 2s infinite ease-in-out;
+        }
+        @keyframes pulseLogo {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(16,185,129,0.7)); }
+            50% { transform: scale(1.08); filter: drop-shadow(0 0 30px rgba(251,191,36,0.9)); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #011c15;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.4);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+<body class="theme-emerald animated-bg min-h-screen text-slate-100 relative overflow-x-hidden flex flex-col justify-between selection:bg-amber-400 selection:text-neutral-950 transition-colors duration-700">
+
+    <div id="preloader">
+        <div class="relative flex flex-col items-center text-center p-6">
+            <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-amber-400 shadow-2xl loader-pulse mb-6 bg-black/40 flex items-center justify-center">
+                <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/150x150/064e3b/fbbf24?text=MSA'">
+            </div>
+            <h2 class="text-2xl md:text-3xl font-display font-extrabold text-white tracking-wide mb-2">Maa Santoshi Agro</h2>
+            <p class="text-amber-300 font-semibold text-sm md:text-base mb-6 flex items-center gap-2 justify-center flex-wrap">
+                <span class="inline-flex items-center gap-1"><i class="fa-solid fa-location-dot text-amber-400"></i> At: Laikera</span>
+                <span class="text-white/60">&amp;</span>
+                <span class="inline-flex items-center gap-1"><i class="fa-solid fa-location-dot text-amber-400"></i> At: Patrapali, Kuchinda</span>
+            </p>
+            <div class="flex items-center gap-3 text-amber-200 font-bold text-sm tracking-widest uppercase">
+                <div class="w-5 h-5 border-2 border-amber-400 border-t-transparent rounded-full animate-spin"></div>
+                <span class="loading-text">Loading Portal...</span>
+            </div>
+        </div>
     </div>
-  </footer>
 
-  <!-- Execution Logic Scripts -->
-  <script>
-    window.addEventListener('load', function() {
-      const preloader = document.getElementById('preloader');
-      preloader.style.opacity = '0';
-      setTimeout(function(){
-        preloader.style.display = 'none';
-      }, 500); 
-    });
-  </script>
+    <div id="particles-container" class="absolute inset-0 overflow-hidden pointer-events-none z-0"></div>
+
+    <header class="relative z-10 w-full pt-6 pb-4 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto flex flex-col gap-4">
+            
+            <!-- Theme Selector Bar with Apple Glass Bubble -->
+            <div class="apple-bubble p-3.5 flex flex-wrap items-center justify-between gap-3 shadow-2xl">
+                <div class="flex items-center gap-2 text-xs md:text-sm font-bold tracking-wide text-amber-300">
+                    <i class="fa-solid fa-palette text-base text-amber-400"></i> <span>Choose Themes:</span>
+                </div>
+                <div class="flex items-center gap-2 flex-wrap">
+                    <button onclick="setTheme('emerald')" class="theme-btn apple-bubble-sm px-3.5 py-1.5 text-xs font-bold text-white transition flex items-center gap-1.5" data-theme="emerald">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow"></span> Emerald
+                    </button>
+                    <button onclick="setTheme('lavender')" class="theme-btn apple-bubble-sm px-3.5 py-1.5 text-xs font-bold text-white transition flex items-center gap-1.5" data-theme="lavender">
+                        <span class="w-2.5 h-2.5 rounded-full bg-purple-400 shadow"></span> Lavender
+                    </button>
+                    <button onclick="setTheme('skyblue')" class="theme-btn apple-bubble-sm px-3.5 py-1.5 text-xs font-bold text-white transition flex items-center gap-1.5" data-theme="skyblue">
+                        <span class="w-2.5 h-2.5 rounded-full bg-sky-400 shadow"></span> Sky Blue
+                    </button>
+                    <button onclick="setTheme('cream')" class="theme-btn apple-bubble-sm px-3.5 py-1.5 text-xs font-bold text-white transition flex items-center gap-1.5" data-theme="cream">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-300 shadow"></span> Cream Gold
+                    </button>
+                    <button onclick="setTheme('sunset')" class="theme-btn apple-bubble-sm px-3.5 py-1.5 text-xs font-bold text-white transition flex items-center gap-1.5" data-theme="sunset">
+                        <span class="w-2.5 h-2.5 rounded-full bg-orange-400 shadow"></span> Sunset
+                    </button>
+                    <button onclick="setTheme('indigo')" class="theme-btn apple-bubble-sm px-3.5 py-1.5 text-xs font-bold text-white transition flex items-center gap-1.5" data-theme="indigo">
+                        <span class="w-2.5 h-2.5 rounded-full bg-indigo-400 shadow"></span> Indigo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Brand Header Card with Apple Bubble Aesthetic -->
+            <div class="apple-bubble p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+                <div class="flex items-center gap-5 text-center md:text-left flex-col md:flex-row">
+                    <div class="w-20 h-20 md:w-24 md:h-24 rounded-3xl overflow-hidden shadow-2xl border-2 border-amber-400/80 flex-shrink-0 bg-black/50 group transition duration-300 hover:scale-105">
+                        <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/100x100/064e3b/fbbf24?text=MSA'">
+                    </div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/25 border border-amber-400 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2 shadow">
+                            <i class="fa-solid fa-seedling text-amber-400"></i> Authorized Agro Dealer
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-display font-extrabold tracking-tight text-white drop-shadow-lg">
+                            Maa Santoshi Agro
+                        </h1>
+                        <p class="text-slate-200 text-xs md:text-sm mt-1.5 flex items-center justify-center md:justify-start gap-3 flex-wrap font-medium">
+                            <span class="bg-black/50 px-3 py-1 rounded-xl border border-white/20 text-slate-100 shadow"><i class="fa-solid fa-store text-amber-400 mr-1.5"></i> Laikera</span>
+                            <span class="bg-black/50 px-3 py-1 rounded-xl border border-white/20 text-slate-100 shadow"><i class="fa-solid fa-warehouse text-amber-400 mr-1.5"></i> Patrapali, Kuchinda</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Action Bubble Buttons -->
+                <div class="flex flex-row md:flex-col gap-3 w-full md:w-auto justify-center">
+                    <a href="tel:+917894675122" class="flex-1 md:flex-none apple-bubble-sm px-5 py-3 text-center transition duration-300 group">
+                        <span class="block text-xs text-slate-300 uppercase tracking-wider font-bold">Instant Support</span>
+                        <span class="block text-sm md:text-base font-extrabold text-amber-300 group-hover:text-white transition"><i class="fa-solid fa-phone mr-1.5"></i> +91 7894675122</span>
+                    </a>
+                    <a href="https://wa.me/917894675122" target="_blank" class="flex-1 md:flex-none apple-bubble-sm bg-emerald-700/60 hover:bg-emerald-600/80 text-white px-5 py-3 text-center transition duration-300 shadow-xl font-bold text-xs md:text-sm flex items-center justify-center gap-2 border-emerald-400/50">
+                        <i class="fa-brands fa-whatsapp text-lg text-amber-300"></i> WhatsApp Chat
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-6xl mx-auto w-full px-4 md:px-8 py-4 mb-16 flex-grow">
+        
+        <!-- Search & Filter Bar with Apple Glass Bubble -->
+        <div class="mb-8">
+            <div class="apple-bubble p-2.5 md:p-3.5 flex items-center gap-3 shadow-2xl max-w-xl mx-auto">
+                <span class="pl-3 text-amber-400 text-lg"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" id="linkSearch" placeholder="Search portals" 
+                    class="w-full bg-transparent border-none outline-none text-white placeholder-slate-300 text-sm md:text-base font-semibold">
+                <button id="clearSearch" class="hidden px-3.5 py-1.5 rounded-xl bg-white/20 hover:bg-white/30 text-xs font-bold text-white transition shadow">Clear</button>
+            </div>
+            <p id="searchCount" class="text-center text-xs text-amber-300 mt-2 font-bold"></p>
+        </div>
+
+        <!-- Heading Title -->
+        <div class="text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-display font-extrabold text-white mb-2 drop-shadow">Government &amp; Agricultural Portals</h2>
+            <p class="text-slate-200 text-sm max-w-lg mx-auto font-medium">Access quick verification, subsidy tracking, permit generation, and citizen portals instantly.</p>
+        </div>
+
+        <!-- Button Grid (13+ Portals) with Apple Glass Bubble Style -->
+        <div id="linksGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+            
+            <!-- Link Card 1 -->
+            <div class="portal-card" data-title="Farmer Id Enquiry Registration Verification">
+                <button onclick="window.open('https://agrisnetodisha.ori.nic.in/stock/farmer/FarmerInquiry.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Agrisnet Odisha</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Farmer ID Enquiry</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 2 -->
+            <div class="portal-card" data-title="Krushak Odisha Citizen Portal Login">
+                <button onclick="window.open('https://krushak.odisha.gov.in/citizen-portal/login', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-tractor"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Official Portal</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Krushak Odisha</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 3 -->
+            <div class="portal-card" data-title="Target Check FMDBT Agri Odisha">
+                <button onclick="window.open('https://fmdbt.agriodisha.nic.in/public/chktarget', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Allocation</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Target Check</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 4 -->
+            <div class="portal-card" data-title="Sugam Odisha Citizen Portal Login">
+                <button onclick="window.open('https://sugam.odisha.gov.in/website/citizen-portal/login', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Single Window</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Sugam Odisha</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 5 -->
+            <div class="portal-card" data-title="Permit Generation Pump Application New">
+                <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Pump_APPFORM_NEW.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Machinery Portal</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Permit Generation</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 6 -->
+            <div class="portal-card" data-title="Permit Reprint Odisha Farm Machinery">
+                <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Permit_Reprint.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Machinery Portal</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Permit Reprint</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 7 -->
+            <div class="portal-card" data-title="Full Cost Payment FMDBT">
+                <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/FMNDBT_PayFullCost.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Financial</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Full Cost Payment</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 8 -->
+            <div class="portal-card" data-title="Track Payment Status FMDBT">
+                <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/FMNDBT_CHKPMNTSTATUS.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Financial</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Track Payment Status</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 9 -->
+            <div class="portal-card" data-title="Permit Status Check Farm Machinery">
+                <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/ChkStatus.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Verification</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Permit Status</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 10 -->
+            <div class="portal-card" data-title="Dealer Login Farm Machinery Odisha">
+                <button onclick="window.open('https://odishafarmmachinery.nic.in/FMN/Login.aspx', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Dealer Portal</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Dealer Login</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 11 -->
+            <div class="portal-card" data-title="Agrisnet Odisha Official Website">
+                <button onclick="window.open('https://agrisnetodisha.ori.nic.in', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Agriculture Dept</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Agrisnet</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 12 -->
+            <div class="portal-card" data-title="Farm Machinery DBT Odisha">
+                <button onclick="window.open('https://fmdbt.agriodisha.nic.in', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">Subsidy Portal</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">Farm Machinery</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Link Card 13 -->
+            <div class="portal-card" data-title="DBT Link Check MyAadhaar UIDAI">
+                <button onclick="window.open('https://myaadhaar.uidai.gov.in/', '_blank')" 
+                    class="w-full apple-bubble p-5 text-left group flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-black/60 border border-amber-400/50 flex items-center justify-center text-amber-300 text-xl shadow-md group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-amber-300 uppercase tracking-wider">UIDAI Aadhaar</span>
+                            <h3 class="text-base md:text-lg font-bold text-white group-hover:text-amber-200 transition">DBT Link Check</h3>
+                        </div>
+                    </div>
+                    <span class="w-9 h-9 rounded-2xl bg-white/25 flex items-center justify-center text-white group-hover:bg-amber-400 group-hover:text-neutral-950 transition duration-300 shadow">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- No Results Found State -->
+        <div id="noResults" class="hidden text-center py-12 apple-bubble p-8 max-w-md mx-auto mt-6">
+            <div class="text-4xl text-amber-400 mb-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h3 class="text-xl font-bold text-white mb-1">No Matching Portals Found</h3>
+            <p class="text-slate-200 text-sm">Try searching with a different keyword or clear the filter.</p>
+        </div>
+
+    </main>
+
+    <footer class="relative z-10 w-full bg-black/85 backdrop-blur-2xl border-t-2 border-white/25 pt-8 pb-8 px-4 md:px-8 mt-auto shadow-2xl">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Column: Contacts & Corporate Brand Info (5 Cols) -->
+            <div class="lg:col-span-5 space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl overflow-hidden border-2 border-amber-400 shadow-xl flex-shrink-0 bg-black/60">
+                        <img src="MAA SANTOSHI AGRO LOGO.jpg" alt="Maa Santoshi Agro Logo" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/80x80/064e3b/fbbf24?text=MSA'">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-display font-bold text-white tracking-wide">Maa Santoshi Agro</h3>
+                        <p class="text-xs text-amber-300 font-bold">Trusted Agricultural Partner</p>
+                    </div>
+                </div>
+
+                <div class="apple-bubble p-5 space-y-3.5 text-sm bg-black/70">
+                    <p class="flex items-center gap-3 text-white transition">
+                        <span class="w-9 h-9 rounded-2xl bg-black/90 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0 shadow"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+917894675122" class="font-extrabold hover:text-amber-300 hover:underline">+91 7894675122</a>
+                    </p>
+                    <p class="flex items-center gap-3 text-white transition">
+                        <span class="w-9 h-9 rounded-2xl bg-black/90 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0 shadow"><i class="fa-solid fa-envelope"></i></span>
+                        <a href="mailto:maasantoshiagro@gmail.com" class="font-extrabold hover:text-amber-300 hover:underline break-all">maasantoshiagro@gmail.com</a>
+                    </p>
+                    <p class="flex items-center gap-3 text-white transition">
+                        <span class="w-9 h-9 rounded-2xl bg-black/90 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0 shadow"><i class="fa-brands fa-whatsapp"></i></span>
+                        <a href="https://wa.me/917894675122" target="_blank" class="font-extrabold text-amber-300 hover:underline">Chat on WhatsApp</a>
+                    </p>
+                    <p class="flex items-start gap-3 text-slate-100 pt-2 border-t border-white/15">
+                        <span class="w-9 h-9 rounded-2xl bg-black/90 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0 mt-0.5 shadow"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="text-xs font-semibold leading-relaxed">At: Laikera &amp; At: Patrapali, Kuchinda, Odisha - 768222</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: Double Embedded Map Containers (7 Cols) -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Map Panel 1: Laikera Branch -->
+                <div class="apple-bubble p-4 flex flex-col justify-between shadow-2xl bg-black/70">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-store text-amber-400"></i> Laikera Branch
+                        </span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-lg animate-pulse"></span>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-inner border border-white/30">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.124664929888!2d84.2145089!3d21.8912747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20f92f087f56ed%3A0xb14edaa688a28c79!2sMaa%20Santoshi%20Agro!5e0!3m2!1sen!2sin!4v1789062052601!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="125" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Map Panel 2: Patrapali Branch -->
+                <div class="apple-bubble p-4 flex flex-col justify-between shadow-2xl bg-black/70">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-warehouse text-amber-400"></i> Patrapali Branch
+                        </span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-lg animate-pulse"></span>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-inner border border-white/30">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.0560224015157!2d84.3539303!3d21.7780927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2055007ace7c27%3A0xdd52542e913aeec5!2sMaa%20Santoshi%20Agro!5e0!3m2!1sen!2sin!4v1789062146934!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="125" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-white/20 text-center text-xs text-slate-300 font-medium flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p>&copy; 2026 Maa Santoshi Agro. All Rights Reserved.</p>
+            <p class="text-amber-300 font-bold">At : Laikera &amp; At : Patrapali, Kuchinda, Odisha</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Preloader fade out logic
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function(){
+                preloader.style.display = 'none';
+            }, 600);
+            
+            // Generate background particles
+            createParticles();
+            
+            // Load saved theme if available
+            const savedTheme = localStorage.getItem('msa_theme') || 'emerald';
+            setTheme(savedTheme, false);
+        });
+
+        // 2. Dynamic background floating particles
+        function createParticles() {
+            const container = document.getElementById('particles-container');
+            const particleCount = 20;
+            for (let i = 0; i < particleCount; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                const size = Math.random() * 9 + 4;
+                p.style.width = `${size}px`;
+                p.style.height = `${size}px`;
+                p.style.left = `${Math.random() * 100}vw`;
+                p.style.animationDuration = `${Math.random() * 10 + 8}s`;
+                p.style.animationDelay = `${Math.random() * 5}s`;
+                container.appendChild(p);
+            }
+        }
+
+        // 3. Theme switcher function
+        function setTheme(themeName, save = true) {
+            const body = document.body;
+            body.className = `theme-${themeName} animated-bg min-h-screen text-slate-100 relative overflow-x-hidden flex flex-col justify-between selection:bg-amber-400 selection:text-neutral-950 transition-colors duration-700`;
+            
+            if (save) {
+                localStorage.setItem('msa_theme', themeName);
+            }
+
+            // Highlight active button
+            document.querySelectorAll('.theme-btn').forEach(btn => {
+                if (btn.getAttribute('data-theme') === themeName) {
+                    btn.classList.add('ring-2', 'ring-amber-300', 'scale-105');
+                } else {
+                    btn.classList.remove('ring-2', 'ring-amber-300', 'scale-105');
+                }
+            });
+        }
+
+        // 4. Live search filter for portal buttons
+        const searchInput = document.getElementById('linkSearch');
+        const clearBtn = document.getElementById('clearSearch');
+        const searchCount = document.getElementById('searchCount');
+        const portalCards = document.querySelectorAll('.portal-card');
+        const noResults = document.getElementById('noResults');
+
+        function filterPortals() {
+            const query = searchInput.value.toLowerCase().trim();
+            let matchCount = 0;
+
+        portalCards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                const text = card.textContent.toLowerCase();
+                if (title.includes(query) || text.includes(query)) {
+                    card.style.display = 'block';
+                    matchCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (query.length > 0) {
+                clearBtn.classList.remove('hidden');
+                searchCount.textContent = `Found ${matchCount} matching portal${matchCount === 1 ? '' : 's'}`;
+            } else {
+                clearBtn.classList.add('hidden');
+                searchCount.textContent = '';
+            }
+
+            if (matchCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        searchInput.addEventListener('input', filterPortals);
+
+        clearBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            filterPortals();
+            searchInput.focus();
+        });
+    </script>
 
 </body>
 </html>
